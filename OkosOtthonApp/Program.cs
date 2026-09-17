@@ -12,6 +12,7 @@ namespace OkosOtthonApp
         static List<Ertesites> ertesitesk = new List<Ertesites>();
         static void Main(string[] args)
         {
+            //1. Feladat: Az Okosotthon Értesítési Rendszere
             string riasztas = "Riasztás: Betörés történt az otthonban!";
             PushErtesites push = new PushErtesites("Device123", riasztas);
             EmailErtesites email = new EmailErtesites("szia@gmail.com", riasztas);
