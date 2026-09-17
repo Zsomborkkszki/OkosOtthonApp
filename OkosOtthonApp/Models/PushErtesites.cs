@@ -15,10 +15,9 @@ namespace OkosOtthonApp.Models
         }
         public string Uzenet { get; set; }
         public string DeviceID { get; set; }
-        public override void Kuld()
+        public override void Kuld(string üzenet)
         {
-            IdoBelyeg = DateTime.Now;
-            Console.WriteLine($"[PUSH] Küldés a(z) {DeviceID} eszközre | Idő: {DateTime.Now} | Üzenet: {Uzenet}");
+            Console.WriteLine($"[PUSH] Küldés a(z) {DeviceID} eszközre | Idő: {DateTime.Now} | Üzenet: {üzenet}");
         }
     }
 }

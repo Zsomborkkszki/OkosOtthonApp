@@ -15,9 +15,9 @@ namespace OkosOtthonApp.Models
         }
         public string Email { get; set; }
         public string Uzenet { get; set; }
-        public override void Kuld()
+        public override void Kuld(string üzenet)
         {
-            Console.WriteLine($"[EMAIL] Küldés a(z) {Email} email címre | Idő: {DateTime.Now} | Üzenet: {Uzenet}");
+            Console.WriteLine($"[EMAIL] Küldés a(z) {Email} email címre | Idő: {DateTime.Now} | Üzenet: {üzenet}");
         }
     }
 }

@@ -8,6 +8,6 @@ namespace OkosOtthonApp.Models
 {
     internal abstract class Ertesites
     {
-        public abstract void Kuld();
+        public abstract void Kuld(string üzenet);
     }
 }

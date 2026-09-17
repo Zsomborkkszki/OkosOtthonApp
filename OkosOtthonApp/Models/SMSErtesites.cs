@@ -16,9 +16,10 @@ namespace OkosOtthonApp.Models
 
         public string Telefon { get; set; }
         public string Uzenet { get; set; }
-        public override void Kuld()
+        public override void Kuld(string üzenet)
         {
-            Console.WriteLine($"[SMS] Küldés a(z) {Telefon} telefonszámra | Idő: {DateTime.Now} | Üzenet: {Uzenet}");
+            Console.WriteLine(üzenet);
+            Console.WriteLine($"[SMS] Küldés a(z) {Telefon} telefonszámra | Idő: {DateTime.Now} | Üzenet: {üzenet}");
         }
     }
 }
